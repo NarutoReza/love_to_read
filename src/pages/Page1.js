@@ -43,7 +43,7 @@ function Page1() {
   return (
     <>
       <div className='page-box'>
-        <div className='page' style={{backgroundImage: `url('/images/02c.png')`}}>
+        <div className='page' style={{backgroundImage: `url('${process.env.REACT_APP_BASE_URL}images/02c.png')`}}>
           <h6>Word Family - /<span style={{color: 'black'}}>sp</span>/ words</h6>
           <div className='single-words-box'>
             <div className='single-words-images'>
@@ -66,7 +66,7 @@ function Page1() {
             </div>
           </div>
         </div>
-        <div className='page' style={{backgroundImage: `url('/images/02c.png')`}}>
+        <div className='page' style={{backgroundImage: `url('${process.env.REACT_APP_BASE_URL}images/02c.png')`}}>
           <h6><span style={{color: 'red'}}>Sp</span>ot is my pet dog.</h6>
           <img src='/images/boy.png' className='boy-dog' />
         </div>
